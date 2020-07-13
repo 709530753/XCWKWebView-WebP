@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XCWKWebView-WebP_Example' do
+  pod 'XCWKWebView-WebP', :path => '../'
+
+  target 'XCWKWebView-WebP_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
