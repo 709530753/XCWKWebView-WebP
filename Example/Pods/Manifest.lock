@@ -1,0 +1,49 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - SDWebImage/Core (5.8.3)
+  - SDWebImageWebPCoder (0.6.1):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.7)
+  - XCWKWebView-WebP (0.1.0):
+    - SDWebImageWebPCoder
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - libwebp (from `/Users/myxc/Desktop/libwebp.podspec.json`)
+  - XCWKWebView-WebP (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - SDWebImage
+    - SDWebImageWebPCoder
+
+EXTERNAL SOURCES:
+  libwebp:
+    :podspec: "/Users/myxc/Desktop/libwebp.podspec.json"
+  XCWKWebView-WebP:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  libwebp: 04242ef451672185c1fe41b285a034d2fbda483c
+  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
+  XCWKWebView-WebP: b77e97c120194419d5d27fe8951ab04a438bce81
+
+PODFILE CHECKSUM: aafbb5013250abe978d0b4f332dea92164d92bde
+
+COCOAPODS: 1.8.4

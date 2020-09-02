@@ -1,0 +1,6 @@
+framework module XCWKWebView_WebP {
+  umbrella header "XCWKWebView-WebP-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1948D252D0B42B3AB069EE28 /* Pods-XCWKWebView-WebP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWKWebView-WebP_Example.debug.xcconfig"; path = "Target Support Files/Pods-XCWKWebView-WebP_Example/Pods-XCWKWebView-WebP_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2E266A635BF674C721FA41D0 /* XCWKWebView-WebP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "XCWKWebView-WebP.podspec"; path = "../XCWKWebView-WebP.podspec"; sourceTree = "<group>"; };
+		2E266A635BF674C721FA41D0 /* XCWKWebView-WebP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "XCWKWebView-WebP.podspec"; path = "../XCWKWebView-WebP.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		321454EE4456F4249ABA4CBC /* Pods-XCWKWebView-WebP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWKWebView-WebP_Tests.release.xcconfig"; path = "Target Support Files/Pods-XCWKWebView-WebP_Tests/Pods-XCWKWebView-WebP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		32B60357BDD1501E29B22363 /* Pods-XCWKWebView-WebP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWKWebView-WebP_Example.release.xcconfig"; path = "Target Support Files/Pods-XCWKWebView-WebP_Example/Pods-XCWKWebView-WebP_Example.release.xcconfig"; sourceTree = "<group>"; };
 		47AE4EFCC1EF4CCB202491A0 /* Pods_XCWKWebView_WebP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCWKWebView_WebP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,8 +61,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6AA022E0E463BEB7826FA647 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6CD064B24E819E355FDBBAF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6AA022E0E463BEB7826FA647 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6CD064B24E819E355FDBBAF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C876842021AE18E67BB4B385 /* Pods_XCWKWebView_WebP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCWKWebView_WebP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				CE31E612F33BC7DB6E1E8C7E /* Pods-XCWKWebView-WebP_Tests.debug.xcconfig */,
 				321454EE4456F4249ABA4CBC /* Pods-XCWKWebView-WebP_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,11 +365,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XCWKWebView-WebP_Example/Pods-XCWKWebView-WebP_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
 				"${BUILT_PRODUCTS_DIR}/XCWKWebView-WebP/XCWKWebView_WebP.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCWKWebView_WebP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -516,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XCWKWebView-WebP/XCWKWebView-WebP-Prefix.pch";
 				INFOPLIST_FILE = "XCWKWebView-WebP/XCWKWebView-WebP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XCWKWebView-WebP/XCWKWebView-WebP-Prefix.pch";
 				INFOPLIST_FILE = "XCWKWebView-WebP/XCWKWebView-WebP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

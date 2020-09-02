@@ -1,0 +1,6 @@
+framework module Pods_XCWKWebView_WebP_Example {
+  umbrella header "Pods-XCWKWebView-WebP_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
